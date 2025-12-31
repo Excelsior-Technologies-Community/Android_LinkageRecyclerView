@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LinkageLayout">
+
+        <attr name="lr_smoothScroll" format="boolean" />
+
+        <attr name="lr_gridSpanCount" format="integer" />
+
+        <attr name="lr_enableStickyHeader" format="boolean" />
+
+        <attr name="lr_headerHeight" format="dimension" />
+
+        <attr name="lr_categoryWidth" format="dimension" />
+
+    </declare-styleable>
+
+</resources>

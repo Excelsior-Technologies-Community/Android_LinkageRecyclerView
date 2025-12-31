@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.ext.linkagerecyclerview.R
 import com.ext.linkagerecyclerview.model.Category
 
 class CategoryAdapter(
@@ -23,7 +24,7 @@ class CategoryAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(android.R.layout.simple_list_item_1, parent, false)
+            .inflate(R.layout.item_category, parent, false)
         return CategoryViewHolder(view)
     }
 
@@ -36,7 +37,7 @@ class CategoryAdapter(
     inner class CategoryViewHolder(itemView: View) :
         RecyclerView.ViewHolder(itemView) {
 
-        private val title: TextView = itemView.findViewById(android.R.id.text1)
+        private val title: TextView = itemView.findViewById(R.id.txtCategory)
 
         fun bind(category: Category, selected: Boolean) {
             title.text = category.title

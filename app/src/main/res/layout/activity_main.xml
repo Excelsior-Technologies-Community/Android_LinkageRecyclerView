@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/categoryRecyclerView"
-        android:layout_width="100dp"
-        android:layout_height="match_parent" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/contentRecyclerView"
-        android:layout_width="0dp"
+    <com.ext.linkagerecyclerview.LinkageLayout
+        android:id="@+id/linkageLayout"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1" />
+        app:lr_smoothScroll="true"
+        app:lr_enableStickyHeader="false"
+        app:lr_headerHeight="56dp"
+        app:lr_categoryWidth="80dp" />
+
 
 </LinearLayout>
